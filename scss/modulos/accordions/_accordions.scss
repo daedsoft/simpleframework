@@ -1,0 +1,52 @@
+//Estilos para los diferentes tipos de acoridiones
+
+/*Acordión tipo A*/
+
+.accordion {
+    cursor: pointer;
+    padding: 15px 55px 15px 30px;
+    border-bottom: 1px solid #EDEFF5;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 15px;
+        bottom: unset;
+        width: 30px;
+        height: 30px;
+        display: block;
+        transition: .25s all;
+        background: url(../media/icons/ic_down_accordion.svg) center no-repeat;
+    }
+    p {
+        @include defaultFont(1, $fw: 600, $ff: 'Roboto', $fz: 16px);
+    }
+    &.active {
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+    &.typeB {
+        padding: 20px 30px 10px 30px;
+        p {
+            &:first-of-type {
+                @include defaultFont(1, $fw: 600, $ff: 'Roboto', $fz: 16px, $c: #404142);
+            }
+            &:last-of-type {
+                @include defaultFont(1, $fw: 600, $ff: 'Roboto', $fz: 14px, $c: #8A8C8F);
+            }
+        }
+    }
+    &:last-of-type {
+        border: 0;
+    }
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border-bottom: 1px solid #EDEFF5;
+    &.show {
+        display: block;
+    }
+}

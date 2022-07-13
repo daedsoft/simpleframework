@@ -1,0 +1,220 @@
+.btn {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 10px 10px;
+    transition: .2s all ease-in-out;
+    border-radius: 5px;
+    min-width: max-content;
+    line-height: normal !important;
+    @include defaultFont(1, $fz: 18px, $fw: 400, $ta: center, $c: #404142, $ff: 'Barlow Condensed');
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            text-decoration: none;
+        }
+    }
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+    }
+    // Tipos de botones
+    &-primary {
+        background-color: #272829;
+        color: #FFF;
+        transition: .25s all;
+        &-green {
+            @extend .btn-primary;
+            background-color: #3D9C73;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #18553b;
+                color: #FFF
+            }
+        }
+        &-blue {
+            @extend .btn-primary;
+            background-color: #2F4B7C;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #192e52;
+                color: #FFF
+            }
+        }
+        &-red {
+            @extend .btn-primary;
+            background-color: #D43D51;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #9c2434;
+                color: #FFF
+            }
+        }
+        &-orange {
+            @extend .btn-primary;
+            background-color: #F78828;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #b6641c;
+                color: #FFF
+            }
+        }
+        &-white {
+            @extend .btn-primary;
+            background-color: #FFF;
+            color: #272829;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: rgb(220, 224, 228);
+                color: #000
+            }
+        }
+    }
+    &-secondary {
+        background-color: transparent;
+        border: 1px solid #272829;
+        color: #272829;
+        &-green {
+            @extend .btn-secondary;
+            border: 1px solid #3D9C73;
+            background-color: transparent;
+            color: #3D9C73;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #18553b;
+                color: #FFF
+            }
+        }
+        &-blue {
+            @extend .btn-secondary;
+            border: 1px solid #2F4B7C;
+            background-color: transparent;
+            color: #2F4B7C;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #192e52;
+                color: #FFF
+            }
+        }
+        &-red {
+            @extend .btn-secondary;
+            border: 1px solid #D43D51;
+            background-color: transparent;
+            color: #D43D51;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #9c2434;
+                color: #FFF
+            }
+        }
+        &-orange {
+            @extend .btn-secondary;
+            border: 1px solid #F78828;
+            background-color: transparent;
+            color: #F78828;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #b6641c;
+                color: #FFF
+            }
+        }
+        &-white {
+            @extend .btn-secondary;
+            border: 1px solid #FFF;
+            background-color: transparent;
+            color: #FFF;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: rgb(220, 224, 228);
+                color: #000
+            }
+        }
+    }
+    &-text {
+        background-color: transparent;
+        color: #272829;
+        font-weight: 700;
+        &-gray {
+            @extend .btn-text;
+            color: #717375;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+    &.small {
+        padding: 6px 10px;
+        font-size: 16px;
+        min-width: 70px;
+        font-weight: 600;
+    }
+    &.btnIcon {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        img {
+            display: inline-block;
+            height: fit-content;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: #6681B0;
+            text-decoration: underline;
+        }
+    }
+}
+
+a.btn {
+    &.disabled,
+    fieldset[disabled] & {
+        pointer-events: none;
+    }
+}
+
+// Block button
+// --------------------------------------------------
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block+.btn-block {
+    margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    &.btn-block {
+        width: 100%;
+    }
+}

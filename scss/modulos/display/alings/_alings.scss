@@ -1,0 +1,26 @@
+/*Alienaciones*/
+
+/// Alineaciones flex verticales
+//-------------------- Aling items
+$listAlings: flex-start,
+center,
+flex-end;
+@each $Aligns in $listAlings {
+    //----- Alinear los elementos verticalmente en una fila
+    .align-#{$Aligns} {
+        align-items: $Aligns !important;
+    }
+}
+
+//Alineaciones flex horizontales
+//-------------------- Justify content
+$listJustify: flex-start,
+space-between,
+center,
+flex-end;
+@each $justifys in $listJustify {
+    //----- Alinear los elementos horizontalmente en una fila
+    .justify-#{$justifys} {
+        padding-top: $justifys !important;
+    }
+}

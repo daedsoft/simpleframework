@@ -1,0 +1,126 @@
+//Estilos para las tarjetas main
+%card-header {
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    background-color: #F7F9FF;
+    position: relative;
+    h2 {
+        margin: 0;
+    }
+}
+
+%card-body {
+    border-radius: 0 0 5px 5px;
+    background-color: #FFF;
+    position: relative;
+    .sectionCardBody {
+        padding: 15px;
+        border-bottom: 1px solid #EDEFF5;
+        &:last-of-type {
+            border: 0;
+        }
+        .item {
+            padding: 10px 0;
+        }
+    }
+}
+
+.main-card {
+    .card-header {
+        @extend %card-header;
+    }
+    .card-body {
+        @extend %card-body;
+    }
+    &--collapse {
+        .card-header {
+            @extend %card-header;
+            cursor: pointer;
+            &.collapse {
+                border-radius: 5px;
+                &.active {
+                    border-radius: 5px 5px 0 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 15px;
+                    bottom: 8px;
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    transition: .25s all;
+                    background: url(../media/icons/ic_down_accordion.svg) center no-repeat;
+                }
+                &.active {
+                    &::before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        .card-body {
+            @extend %card-body;
+            display: none;
+            &.show {
+                display: block;
+            }
+        }
+    }
+    &.yellow {
+        border: 1px solid #EDEFF5;
+        border-radius: 5px;
+        .card-header {
+            background-color: #FEF8E5;
+            h2 {
+                color: #717375;
+                font-family: $barlowCon;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+//Estilos para las tarjtas de colores
+.card {
+    width: 100%;
+    height: 100%;
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFF;
+        padding: 15px;
+        height: 65px;
+        border-radius: 5px 5px 0 0;
+        background: linear-gradient(90deg, #272829 0%, #2E2F30 14.29%, #353637 28.57%, #3C3D3E 42.86%, #434445 57.14%, #4A4B4D 71.43%, #515254 85.71%, #595A5C 100%);
+        p {
+            min-width: 105px;
+            max-width: 190px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: $barlowCon;
+        }
+        &-blue {
+            @extend .card-header;
+            background: linear-gradient(90.69deg, #091730 8.34%, #122851 21.25%, #172E58 31.04%, #1C345F 47.18%, #213966 63.32%, #263F6D 79.46%, #2A4575 86.33%, #819AC6 111.73%);
+        }
+        &-green {
+            @extend .card-header;
+            background: linear-gradient(90deg, #00361E 0%, #074329 14.29%, #115134 28.57%, #1A5F40 42.86%, #236E4C 57.14%, #2B7D59 71.43%, #348C66 85.71%, #3D9C73 100%);
+        }
+        &-red {
+            @extend .card-header;
+            background: linear-gradient(90deg, #6E000F 0%, #7C0918 14.29%, #8A1320 28.57%, #991C29 42.86%, #A72433 57.14%, #B62D3C 71.43%, #C53546 85.71%, #D43D51 100%);
+        }
+    }
+    .card-body {
+        height: calc(100% - 65px);
+        padding: 15px;
+        border-radius: 0 0 5px 5px;
+        background-color: #FFF;
+    }
+}
