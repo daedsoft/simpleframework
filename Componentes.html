@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Framework</title>
+    <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <!--#region Header section with button error-->
+    <header>
+        <nav class="main-menu">
+            <a href="#" class="img-brand">
+                <img src="media/logos/logotipo-ejemplo.svg" alt="" class="logo-desk">
+            </a>
+            <button class="menu-responsive"></button>
+            <div class="menu-navigation">
+                <ul class="navigation-items ml-auto">
+                    <li class="item-nav">
+                        <button type="button" class="btn-search"></button>
+                    </li>
+                    <li class="item-nav active"><a href="">Item menu 01</a></li>
+                    <li class="item-nav"><a href="">Item menu 02</a></li>
+                    <li class="item-nav"><a href="">Item menu 03</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- #endregion -->
+    <!-- #region menú lateral -->
+    <section class="wrapper">
+        <button class="btn-close-lateral-menu"></button>
+        <nav class="lateral-menu">
+            <ul class="menu">
+                <li class="nav-item"><a href="#Botones">Botones</a></li>
+                <li class="nav-item"><a href="#Tags">Tags</a></li>
+                <li class="nav-item"><a href="#Tarjetas">Tarjetas principales sin colapsar</a></li>
+                <li class="nav-item"><a href="#TarjetasC">Tarjetas principales colapsables</a></li>
+                <li class="nav-item"><a href="#TarjetasHC">Tarjetas con header de colores</a></li>
+                <li class="nav-item"><a href="#Acordiones">Acordiones Tipo A</a></li>
+                <li class="nav-item"><a href="#AcordionesB">Acordiones Tipo B</a></li>
+                <li class="nav-item"><a href="#TablaDiv">Div con aspecto de tablas</a></li>
+                <li class="nav-item"><a href="#Tablas">Tablas</a></li>
+                <li class="nav-item"><a href="#TablaS">Tabla striped</a></li>
+                <li class="nav-item"><a href="#tablasColor">Tablas de colores</a></li>
+                <li class="nav-item"><a href="#clasMod">Clases modificadoras</a></li>
+                <li class="nav-item"><a href="#inputForm">Inputs formularios</a></li>
+                <li class="nav-item"><a href="#mensajesBack">Mensajes por back-end</a></li>
+                <li class="nav-item"><a href="#modales">Modales</a></li>
+            </ul>
+        </nav>
+        <div class="sideLayer">
+            <div class="container pb-20px">
+                <h2 class="main-title-medium" id="Botones">Botones primarios, secundarios, tipo texto y con ícono</h2>
+                <!-- #region botones-->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-primary-green btn-block my-15px">Botón primario verde</button>
+                        <button type="button" class="btn btn-primary-blue btn-block my-15px">Botón primario azul</button>
+                        <button type="button" class="btn btn-primary-red btn-block my-15px">Botón primario rojo</button>
+                        <button type="button" class="btn btn-primary-orange btn-block my-15px">Botón primario naranja</button>
+                        <button type="button" class="btn btn-primary-white btn-block my-15px">Botón primario blanco</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-primary-green btn-block my-15px small">Botón primario verde small</button>
+                        <button type="button" class="btn btn-primary-blue btn-block my-15px small">Botón primario azul small</button>
+                        <button type="button" class="btn btn-primary-red btn-block my-15px small">Botón primario rojo small</button>
+                        <button type="button" class="btn btn-primary-orange btn-block my-15px small">Botón primario naranja small</button>
+                        <button type="button" class="btn btn-primary-white btn-block my-15px small">Botón primario blanco small</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-secondary-green btn-block my-15px">Botón secundario verde</button>
+                        <button type="button" class="btn btn-secondary-blue btn-block my-15px">Botón secundario azul</button>
+                        <button type="button" class="btn btn-secondary-red btn-block my-15px">Botón secundario rojo</button>
+                        <button type="button" class="btn btn-secondary-orange btn-block my-15px">Botón secundario naranja</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-secondary-green btn-block my-15px small">Botón secundario verde small</button>
+                        <button type="button" class="btn btn-secondary-blue btn-block my-15px small">Botón secundario azul small</button>
+                        <button type="button" class="btn btn-secondary-red btn-block my-15px small">Botón secundario rojo small</button>
+                        <button type="button" class="btn btn-secondary-orange btn-block my-15px small">Botón secundario naranja small</button>
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-text my-5px">Botón de texto</button> <br>
+                <button type="button" class="btn btn-text-gray btnIcon my-5px"><img src="media/icons/ic_download.svg" class="mr-5px" alt="">Botón de texto + ícono</button>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="Tags"></div>
+                <h2 class="main-title-medium">Tags</h2>
+                <!-- #region Tags-->
+                <div class="content-tags">
+                    <div class="tag--red">
+                        Baja en Ofac
+                    </div>
+                    <div class="tag--green">
+                        Modificada en OFAC
+                    </div>
+                    <div class="tag">
+                        Tag normal
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="Tarjetas"></div>
+                <h2 class="main-title-medium">Tarjetas principales sin colapsar</h2>
+                <!-- #region tarjetas principales-->
+                <div class="main-card">
+                    <div class="card-header">
+                        <h2 class="main-title-small">Detalles</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="sectionCardBody">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p class="tt-upercase">Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p class="tt-upercase">Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p class="tt-upercase">Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="media/images/img_qr.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionCardBody">
+                            <p class="fw-medium">Este texto muestra el seccionador del body card</p>
+                        </div>
+                        <div class="sectionCardBody">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p class="tt-upercase">Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p class="tt-upercase">Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionCardBody">
+                            <p class="fw-medium">Este texto muestra el seccionador del body card</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <!-- #region tarjetas principales colapsables-->
+                <div class="divider my-50px" id="TarjetasC"></div>
+                <h2 class="main-title-medium">Tarjetas principales colapsables</h2>
+                <div class="main-card--collapse">
+                    <div class="card-header collapse active">
+                        <h2 class="main-title-small">Listas restrictivas - Constancia de búsqueda</h2>
+                    </div>
+                    <div class="card-body show">
+                        <div class="sectionCardBody">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <span class="fz-12px fw-bold">Título label item</span>
+                                        <p>Texto que acompaña al título</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionCardBody">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <p class="text-note">*Contaduría refleja a los Deudores Morosos del Estado, personas naturales y jurídicas que a cualquier titulo, a una fecha de corte, tiene contraída una obligación con una entidad pública de cualquier orden o nivel,
+                                        cuya cuantía supera los cinco salarios mínimos mensuales legales vigentes (SMMLV) y más de seis (6) meses de mora, o que habiendo suscrito un acuerdo de pago, lo haya incumplido. <br> <br> Fuente innaccesible</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="TarjetasHC"></div>
+                <h2 class="main-title-medium">Tarjetas con header de colores</h2>
+                <div class="row mb-25px">
+                    <div class="col-sm-4 my-10px">
+                        <!-- #region tarjetas-->
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Tarjeta normal + botón</p>
+                                <button class="btn btn-secondary-white small">Validar documento</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p>Texto que acompaña al título</p>
+                                </div>
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p class="tt-upercase">Texto que acompaña al título</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                    </div>
+                    <div class="col-sm-4 my-10px">
+                        <!-- #region tarjetas-->
+                        <div class="card">
+                            <div class="card-header-blue">
+                                <p>Tarjeta azul + ícono</p>
+                                <img src="media/icons/ic_ok.svg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p>Texto que acompaña al título</p>
+                                </div>
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p class="tt-upercase">Texto que acompaña al título</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                    </div>
+                    <div class="col-sm-4 my-10px">
+                        <!-- #region tarjetas-->
+                        <div class="card">
+                            <div class="card-header-green">
+                                <p>Tarjeta verde + ícono</p>
+                                <img src="media/icons/ic_ok.svg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p>Texto que acompaña al título</p>
+                                </div>
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p class="tt-upercase">Texto que acompaña al título</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                    </div>
+                    <div class="col-sm-4 my-10px">
+                        <!-- #region tarjetas-->
+                        <div class="card">
+                            <div class="card-header-red">
+                                <p>Tarjeta roja + ícono</p>
+                                <img src="media/icons/ic_alert_2.svg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p>Texto que acompaña al título</p>
+                                </div>
+                                <div class="item">
+                                    <span class="fz-12px fw-bold">Título label item</span>
+                                    <p class="tt-upercase">Texto que acompaña al título</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                    </div>
+                </div>
+                <!-- #region Acordiones Tipo A-->
+                <div class="divider my-50px" id="Acordiones"></div>
+                <h2 class="main-title-medium">Acordiones Tipo A</h2>
+                <div class="bg-white">
+                    <div class="accordion-container">
+                        <div class="accordion">
+                            <p>Este es un texto de ejemplo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <div class="accordion">
+                            <p>Este es un texto de ejemplo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <div class="accordion">
+                            <p>Este es un texto de ejemplo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Acordiones Tipo B-->
+                <div class="divider my-50px" id="AcordionesB"></div>
+                <h2 class="main-title-medium">Acordiones Tipo B</h2>
+                <div class="bg-white">
+                    <div class="accordion-container">
+                        <div class="accordion typeB">
+                            <p>Este es un texto de ejemplo</p>
+                            <p>Subtítulo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <div class="accordion typeB">
+                            <p>Este es un texto de ejemplo</p>
+                            <p>Subtítulo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <div class="accordion typeB">
+                            <p>Este es un texto de ejemplo</p>
+                            <p>Subtítulo</p>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, natus! Debitis pariatur hic corporis? Atque, perferendis. Exercitationem consequuntur possimus aperiam? Nostrum ut dicta delectus. Corrupti nulla debitis nihil
+                                officiis ex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="TablaDiv"></div>
+                <h2 class="main-title-medium">Div con aspecto de tablas</h2>
+                <!-- #region Tablas con Divs-->
+                <div class="table-odd">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Conclusión:</span>
+                                <p>Positivo Lista Restrictiva Homonimo</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Coincidencia:</span>
+                                <p>ID (100%)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Nombre completo:</span>
+                                <p>MARIN PEDRO ANTONIO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Número Identificación:</span>
+                                <p>4870142</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">País de origen:</span>
+                                <p>INTERNACIONAL</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Tipo Lista/Fuente:</span>
+                                <p>OFAC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Tipo:</span>
+                                <p>INDIVIDUAL</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Programa:</span>
+                                <p>SDNTK</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Lugar de nacimiento:</span>
+                                <p>GENOVA, QUINDIO, COLOMBIA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Alias:</span>
+                                <ul class="styled-list">
+                                    <li>MARIN MARIN (A.K.A)</li>
+                                    <li>MANUEL MARULANDA (A.K.A)</li>
+                                    <li>MANUEL MARULANDA VELEZ (A.K.A)</li>
+                                    <li>TIROFIJO (A.K.A)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <span class="label-cell">Fuente original:</span>
+                                <a href="">Ver fuente original</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table-cell">
+                                <button class="btn btn-secondary-blue small">Ver noticia</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="Tablas"></div>
+                <h2 class="main-title-medium">Tablas</h2>
+                <!-- #region Tablas-->
+                <div class="table-responsive">
+                    <table class="mainTable" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO ANTONIO; A.K.A. MANUEL MARULANDA; A.K.A. MANUEL MARULANDA VELEZ; A.K.A. TIROFIJO); DOB 13 MAY 1930; POB GENOVA, QUINDIO, COLOMBIA; CEDULA NO. 4870142 (COLOMBIA) (INDIVIDUAL)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO ANTONIO; A.K.A. MANUEL MARULANDA; A.K.A. MANUEL MARULANDA VELEZ; A.K.A. TIROFIJO); DOB 13 MAY 1930; POB GENOVA, QUINDIO, COLOMBIA; CEDULA NO. 4870142 (COLOMBIA) (INDIVIDUAL)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="main-title-medium" id="TablaS">Tabla striped</h2>
+                <!--Tabla striped-->
+                <div class="table-responsive">
+                    <table class="mainTable--striped" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- #endregion -->
+                <h2 class="main-title-medium" id="tablasColor">Tablas de Colores</h2>
+                <!--Tablas de colores-->
+                <!--Azul-->
+                <div class="table-responsive">
+                    <table class="mainTable-blue" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="btn btn-secondary-blue small">Ocultar detalle</button></td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr class="tr-white">
+                                <td colspan="6">
+                                    <table class="mainTable-blue-light mb-0px" cellspacing="0" cellpadding="0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Descripción de actividad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>COMERCIALIZADORA K Y K S A S</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Verde-->
+                <div class="table-responsive">
+                    <table class="mainTable-green" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="btn btn-secondary-blue small">Ver detalle</button></td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Roja-->
+                <div class="table-responsive">
+                    <table class="mainTable-red" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="btn btn-secondary-blue small">Ver detalle</button></td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Amarilla-->
+                <div class="table-responsive">
+                    <table class="mainTable-yellow" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Denominación monitoreada</th>
+                                <th scope="col">Denominación encontrada</th>
+                                <th scope="col">Porcentaje coincidencia</th>
+                                <th scope="col">Tipo novedad</th>
+                                <th scope="col">Fecha Alerta ABM</th>
+                                <th scope="col">Novedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="mainTable-yellow" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--red">
+                                        Baja en Ofac
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                            <tr>
+                                <td>PEDRO ANTONIO MARIN</td>
+                                <td>MARIN MARIN PEDRO ANTONIO</td>
+                                <td>75 %</td>
+                                <td>
+                                    <div class="tag--green">
+                                        Modificada en OFAC
+                                    </div>
+                                </td>
+                                <td>30/10/2021</td>
+                                <td>(A.K.A. MARIN, PEDRO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="clasMod"></div>
+                <h2 class="main-title-medium">Clases modificadoras</h2>
+                <!--Clases modificadoras-->
+                <div class="table-responsive">
+                    <table class="mainTable--striped" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Clase</th>
+                                <th scope="col">¿Qué modifica?</th>
+                                <th scope="col">Valores establecidos</th>
+                                <th scope="col">Ejemplo de implementación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="col">.lh-</td>
+                                <td>El alto de línea</td>
+                                <td>12px, 14px, 16px, 18px, 20px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;p class="lh-12px"&gt; Lorem ipsum door &lt;/p&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.fz-</td>
+                                <td>Cambio de tamaño de fuente</td>
+                                <td>12px, 14px, 16px, 18px, 20px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;p class="fz-12px"&gt; Lorem ipsum door &lt;/p&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.fw-</td>
+                                <td>Cambio en el peso de la fuente</td>
+                                <td>light, regular, medium, bold <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;p class="fw-bold"&gt; Lorem ipsum door &lt;/p&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.ff-</td>
+                                <td>Cambio en la familia de la fuente</td>
+                                <td>roboto, roboto-condensed<br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;p class="ff-roboto"&gt; Lorem ipsum door &lt;/p&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.ta-</td>
+                                <td>Cambio la orientación del texto</td>
+                                <td>left, center, right<br> <span class="fz-12px">o los que interprete el navegador</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;p class="ta-center"&gt; Lorem ipsum door &lt;/p&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <!--margins-->
+                            <tr>
+                                <td scope="col">.mt-</td>
+                                <td>Agrega un margen superior a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="mt-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.mb-</td>
+                                <td>Agrega un margen inferior a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="mb-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.ml-</td>
+                                <td>Agrega un margen izquierdo a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="ml-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.mr-</td>
+                                <td>Agrega un margen derecho a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="mr-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.mx-</td>
+                                <td>Agrega un margen en el eje de las X a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="mx-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.my-</td>
+                                <td>Agrega un margen en el eje de las Y a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="my-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <!--paddings-->
+                            <tr>
+                                <td scope="col">.pt-</td>
+                                <td>Agrega un margen interno superior a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="pt-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.pb-</td>
+                                <td>Agrega un margen interno inferior a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="pb-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.pl-</td>
+                                <td>Agrega un margen interno izquierdo a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="pl-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.pr-</td>
+                                <td>Agrega un margen interno derecho a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="pr-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.px-</td>
+                                <td>Agrega un margen interno en el eje de las X a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="px-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.py-</td>
+                                <td>Agrega un margen interno en el eje de las Y a los elementos</td>
+                                <td>5px, 10px, 15px, 20px, 25px... <br> <span class="fz-12px">o los que estén establecidos en el framework</span>
+                                </td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="py-15px"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.ct$</td>
+                                <td>Cambia el color del texto</td>
+                                <td>Para ver la lista de colores disponibles revisar la hoja de _variables.scss y los mapas de color disponibles.</td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="ctgreen"&gt; Lorem ipsum door &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col">.bg$</td>
+                                <td>Cambia el color de fondo de la capa</td>
+                                <td>Para ver la lista de colores disponibles revisar la hoja de _variables.scss y los mapas de color disponibles.</td>
+                                <td>
+                                    <pre>
+                                        <code>
+                                            &lt;div class="bggreen"&gt; &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px" id="inputForm"></div>
+                <h2 class="main-title-medium">Inputs form</h2>
+                <!--Formularios-->
+                <form action="" class="formApp">
+                    <div class="form__group">
+                        <label for="" class="label__form">Campo de texto</label>
+                        <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="" class="label__form">Campo de texto + helper text</label>
+                        <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                        <div class="helper__text show">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-error">
+                        <label for="" class="label__form">Campo de texto + helper text error</label>
+                        <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-icon">
+                        <label for="" class="label__form">Campo de texto con ícono</label>
+                        <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                        <span class="icon">
+                            <img src="media/icons/ic_document_number.svg" alt="">
+                        </span>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-icon-nolabel">                    
+                        <input type="text" class="input__text" placeholder="Este es un campo de texto" value="Campo de texto con ícono - Sin label">
+                        <span class="icon">
+                            <img src="media/icons/ic_document_number.svg" alt="">
+                        </span>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="" class="label__form">Campo selector</label>
+                        <select class="input__select">
+                            <option selected disabled>Seleccione una opción</option>
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-icon">
+                        <label for="" class="label__form">Campo selector con ícono</label>
+                        <select class="input__select">
+                            <option selected disabled>Seleccione una opción</option>
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>                
+                        <span class="icon">
+                            <img src="media/icons/ic_document.svg" alt="">
+                        </span>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__check">
+                        <input class="form-check-input" type="checkbox" value="" id="CheckDefault">
+                        <label class="form-check-label" for="CheckDefault">
+                        Default checkbox
+                        </label>
+                    </div>
+                    <div class="form__radio">
+                        <input class="form-check-input" type="radio" name="RadioDefault" id="RadioDefault1">
+                        <label class="form-check-label" for="RadioDefault1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form__check">
+                        <input class="form-check-input" type="checkbox" value="" id="CheckDefault2" checked>
+                        <label class="form-check-label" for="CheckDefault2">
+                        Default checkbox seleccionado <a href="">con vínculo</a>
+                        </label>
+                    </div>
+                    <div class="form__radio">
+                        <input class="form-check-input" type="radio" name="RadioDefault" id="RadioDefault2" checked>
+                        <label class="form-check-label" for="RadioDefault2">
+                            Default radio seleccionado <a href="">con vínculo</a>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label class="label__form">Password</label>
+                        <input type="password" class="input__text" id="password" name="password"/>
+                        <button type="button" class="ic-eye-password" id="togglePassword"></button>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-icon">
+                        <label class="label__form">Password + doble ícono</label>
+                        <input type="password" class="input__text" id="password" name="password" value="ABCD1234"/>
+                        <button type="button" class="ic-eye-password" id="togglePassword"></button>
+                        <span class="icon">
+                            <img src="media/icons/ic_lock.svg" alt="">
+                        </span>
+                        <div class="helper__text">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="form__group-icon">
+                        <label for="" class="label__form">Campo de fecha con máscara</label>
+                        <input type="text" class="input__text" data-format="**/**/****" data-mask="" placeholder="DD/MM/YYYY">
+                        <span class="icon">
+                            <img src="media/icons/ic_calendar.svg" alt="">
+                        </span>
+                        <div class="helper__text">
+                            <p>Solo se pueden ingresar números sin puntos o símbolos.</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- #endregion -->
+                <div class="divider my-50px"></div>
+                <h2 class="main-title-medium">Inputs a 2 o más columnas</h2>
+                <!--Formularios columnas-->
+                <form action="" class="formApp">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form__group-icon">
+                                <label for="" class="label__form">Tipo de documento</label>
+                                <select class="input__select">
+                                    <option selected disabled>Seleccione una opción</option>
+                                    <option>Opción 1</option>
+                                    <option>Opción 2</option>
+                                    <option>Opción 3</option>
+                                </select>                
+                                <span class="icon">
+                                    <img src="media/icons/ic_document.svg" alt="">
+                                </span>
+                                <div class="helper__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form__group-icon-error">
+                                <label for="" class="label__form">Número de documento</label>
+                                <input type="text" class="input__text" placeholder="Buscar">
+                                <span class="icon">
+                                    <img src="media/icons/ic_document_number.svg" alt="">
+                                </span>
+                                <div class="helper__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form__group">
+                                <label for="" class="label__form">Campo de texto 1</label>
+                                <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                                <div class="helper__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form__group">
+                                <label for="" class="label__form">Campo de texto 2</label>
+                                <input type="text" class="input__text" placeholder="Este es un campo de texto">
+                                <div class="helper__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form__group">
+                                <label for="" class="label__form">Campo selector</label>
+                                <select class="input__select">
+                                    <option selected disabled>Seleccione una opción</option>
+                                    <option>Opción 1</option>
+                                    <option>Opción 2</option>
+                                    <option>Opción 3</option>
+                                </select>
+                                <div class="helper__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- #endregion -->
+                <div class="divider my-50px"  id="mensajesBack"></div>
+                <h2 class="main-title-medium">Mensajes de validación por back-end</h2>
+                <!--Mensaje de validación-->
+                <div class="validation-back-light">
+                    <img src="media/icons/ic_alert_2_gray.svg" alt="">
+                    <div class="text-validation">
+                        <h3>Títitulo de validación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt recusandae harum atque.</p>
+                    </div>
+                    <button class="btn-close">
+                        <img src="media/icons/ic_close_gray.svg" alt=""> 
+                    </button>
+                </div>
+                <div class="validation-back-red">
+                    <img src="media/icons/ic_alert_2_black.svg" alt="">
+                    <div class="text-validation">
+                        <h3>Títitulo de validación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt recusandae harum atque.</p>
+                    </div>
+                    <button class="btn-close">
+                        <img src="media/icons/ic_close_white.svg" alt=""> 
+                    </button>
+                </div>
+                <div class="validation-back-yellow">
+                    <img src="media/icons/ic_alert_2_gray.svg" alt="">
+                    <div class="text-validation">
+                        <h3>Títitulo de validación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt recusandae harum atque.</p>
+                    </div>
+                    <button class="btn-close">
+                        <img src="media/icons/ic_close_gray.svg" alt="">
+                    </button>
+                </div>
+                <div class="validation-back-green">
+                    <img src="media/icons/ic_alert_2_white.svg" alt="">
+                    <div class="text-validation">
+                        <h3>Títitulo de validación</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt recusandae harum atque.</p>
+                    </div>
+                    <button class="btn-close">
+                        <img src="media/icons/ic_close_white.svg" alt="">
+                    </button>
+                </div>
+                <!-- #endregion -->
+                <div class="divider my-50px"  id="modales"></div>
+                <h2 class="main-title-medium">Call to action modal</h2>
+                <!--Modales-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-primary-blue btn-block" id="BtnModal">Botón de llamado de modal</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content-small">
+                <div class="modal-header blue">
+                    <img src="media/icons/ic_alert_2_blue.svg" alt="">             
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde accusantium quis recusandae reiciendis. Pariatur eos soluta perferendis molestiae ullam ducimus possimus corporis veniam, aperiam doloremque, cupiditate consequuntur laborum temporibus!</p>                
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary-blue close">Botón para cerrar el modal</button>
+                </div>
+            </div>
+
+        </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+    
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
